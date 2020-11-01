@@ -12,6 +12,25 @@ future returns, the framework uses Alphalens to perform factor return, factor au
 ratio analysis. In the end, this paper observed the existence of a strong correlation between the sentiment
 conveyed by the financial 10-K document and the corresponding future mean returns.
 
+## Quandl Dataset
+
+[Quandl end of day US Stock Prices database, Accessed: 2020-10](https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices)
+
+### How to use Quandl data?
+
+```python
+!pip install quandl
+
+import quandl
+
+quandl.ApiConfig.api_key = "YOURAPIKEY"
+
+data = quandl.get(['EOD/AMZN', 'EOD/NKE'])
+
+data.head()
+
+```
+
 ## Code
 
 You can find the PyTorch implementation of the framework [here](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/tree/main/code)
