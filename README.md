@@ -1,16 +1,17 @@
 # StockGram : An Intelligent Portfolio Manager
 
 ## Overview
-This project attempts to analyze if the tone of financial 10-K reports can determine the company’s future
-mean returns. A diverse portfolio of stocks was selected to test this hypothesis. The proposed framework
-downloads 10-K reports of the companies from SEC’s EDGAR database. It passes them through the
-preprocessing pipeline to extract critical sections of the filings to perform NLP analysis. Using Loughran
-McDonald sentiment word list, the framework generates sentiment TF-IDF from the 10-K documents
-to calculate the cosine similarity between each tick in time. The framework proposes to leverage this
-cosine similarity as the alpha factor. For analyzing the effectiveness of our alpha factor at predicting
-future returns, the framework uses Alphalens to perform factor return, factor autocorrelation, and Sharpe
-ratio analysis. In the end, this paper observed the existence of a strong correlation between the sentiment
-conveyed by the financial 10-K document and the corresponding future mean returns.
+The paper attempts to analyze if the sentiment stability of financial 10-K reports over time can determine
+the company’s future mean returns. A diverse portfolio of stocks was selected to test this hypothesis. The
+proposed framework downloads 10-K reports of the companies from SEC’s EDGAR database. It passes
+them through the preprocessing pipeline to extract critical sections of the filings to perform NLP analysis.
+Using Loughran and McDonald [6] sentiment word list, the framework generates sentiment TF-IDF from
+the 10-K documents to calculate the cosine similarity between two consecutive 10-K reports and proposes
+to leverage this cosine similarity as the alpha factor. For analyzing the effectiveness of our alpha factor
+at predicting future returns, the framework uses the alphalens library to perform factor return analysis,
+turnover analysis, and for comparing the Sharpe ratio of potential alpha factors. The results show that
+there exists a strong correlation between the sentiment stability of our portfolio’s 10-K statements and its
+future mean returns.
 
 ## Quandl Dataset
 
@@ -30,6 +31,10 @@ data = quandl.get(['EOD/AMZN', 'EOD/NKE'])
 data.head()
 
 ```
+
+## Research Paper
+
+Please find my research paper on [Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/blob/main/research%20paper/Intelligent%20Portfolio%20Management%20via%20NLP%20Anlaysis%20on%20Financial%2010-k%20Statements%20-%20revised.pdf), to be published in the November issue of [International Journal of Artificial Intelligence and Applications](http://www.airccse.org/journal/ijaia/ijaia.html)
 
 ## Code
 
