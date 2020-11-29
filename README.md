@@ -1,4 +1,9 @@
-# StockGram : An Intelligent Portfolio Manager
+# [StockGram : An Intelligent Portfolio Manager](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf)
+
+## Research Paper
+Citation/PDF Format:<br>
+[Singh, P., 2020. Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements. International Journal of Artificial Intelligence and Applications (IJAIA), 11(5).](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf)
+
 
 ## Overview
 The paper attempts to analyze if the sentiment stability of financial 10-K reports over time can determine
@@ -34,7 +39,7 @@ data.head()
 
 ## Research Paper
 
-Please find my research paper on [Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/blob/main/research%20paper/Intelligent%20Portfolio%20Management%20via%20NLP%20Anlaysis%20on%20Financial%2010-k%20Statements%20-%20revised.pdf), to be published in the November issue of [International Journal of Artificial Intelligence and Applications](http://www.airccse.org/journal/ijaia/ijaia.html)
+Please find my research paper on [Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf), published in the November issue of [International Journal of Artificial Intelligence and Applications](http://www.airccse.org/journal/ijaia/ijaia.html)
 
 ## Code
 
