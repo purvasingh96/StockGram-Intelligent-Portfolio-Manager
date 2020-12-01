@@ -1,16 +1,16 @@
 # [StockGram : An Intelligent Portfolio Manager](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf)
 
 ## Research Paper
-Citation/PDF Format:<br>
-[Singh, P., 2020. Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements. International Journal of Artificial Intelligence and Applications (IJAIA), 11(5).](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf)
+
+Please find my research paper on [Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf), published in the November issue of [International Journal of Artificial Intelligence and Applications](http://www.airccse.org/journal/ijaia/ijaia.html)
 
 
 ## Overview
-The paper attempts to analyze if the sentiment stability of financial 10-K reports over time can determine
+The project attempts to analyze if the sentiment stability of financial 10-K reports over time can determine
 the company’s future mean returns. A diverse portfolio of stocks was selected to test this hypothesis. The
 proposed framework downloads 10-K reports of the companies from SEC’s EDGAR database. It passes
 them through the preprocessing pipeline to extract critical sections of the filings to perform NLP analysis.
-Using Loughran and McDonald [6] sentiment word list, the framework generates sentiment TF-IDF from
+Using Loughran and McDonald sentiment word list, the framework generates sentiment TF-IDF from
 the 10-K documents to calculate the cosine similarity between two consecutive 10-K reports and proposes
 to leverage this cosine similarity as the alpha factor. For analyzing the effectiveness of our alpha factor
 at predicting future returns, the framework uses the alphalens library to perform factor return analysis,
@@ -37,10 +37,6 @@ data.head()
 
 ```
 
-## Research Paper
-
-Please find my research paper on [Intelligent Portfolio Management via NLP Analysis of Financial 10-K Statements](https://aircconline.com/ijaia/V11N6/11620ijaia02.pdf), published in the November issue of [International Journal of Artificial Intelligence and Applications](http://www.airccse.org/journal/ijaia/ijaia.html)
-
 ## Code
 
 You can find the PyTorch implementation of the framework [here](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/tree/main/code)
@@ -49,14 +45,10 @@ You can find the PyTorch implementation of the framework [here](https://github.c
 
 ### Factor Returns
 
-This project will be leveraging cosine similarity between each tick in time as our alpha factor.
-Alphalens gives us a full battery of tests from future returns, information analysis to turnover
-analysis that provides us with a sense of the predictive power of an individual factor. One
-useful parameter is the return of our factor, which is called the factor return . In other words,
-factor returns are a way to directly measure the returns of our portfolio if their weights were
+Factor returns are a way to directly measure the returns of our portfolio if their weights were
 determined purely by the alpha factor. Alphalens requires two mandatory arguments to
-predict future mean returns: factors and prices. In this paper, we consider cosine
-similarity as factor data and year-end adjusted closing prices of the stocks in our portfolio as
+predict future mean returns: factors and prices. In this project, we consider cosine
+similarity between two consecutive 10-K reports as factor data and year-end adjusted closing prices of the stocks in our portfolio as
 pricing data to run against our factor data.<br><br>
 
 After generating the factor data frame and setting the pricing data, we pass both the arguments
