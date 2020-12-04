@@ -36,6 +36,16 @@ data = quandl.get(['EOD/AMZN', 'EOD/NKE'])
 data.head()
 
 ```
+## Portfolio
+
+We test our hypothesis: `Sentiment stability of financial 10-K report can be a potential trading signal`, on a diverse portfolio of 7 stocks as below:
+<img src="./images/1.portfolio table.png"></img>  
+
+## The SEC EDGAR Database
+In order to extract financial 10-K reports of the stocks in our universe, we leverage a pre-defined SEC API and the CIK number of the stock. Details on how to extract the 10-K report from SEC EDGAR database and pre-process it can be found in this notebook.  
+
+## Loughran McDonald Sentiment Word List
+
 
 ## Code
 
