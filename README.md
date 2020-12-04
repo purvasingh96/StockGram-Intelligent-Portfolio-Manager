@@ -38,14 +38,14 @@ data.head()
 ```
 ## Portfolio
 
-We test our hypothesis: `Sentiment stability of financial 10-K report can be a potential trading signal`, on a diverse portfolio of 7 stocks as below:
-<img src="./images/1.portfolio table.png"></img>  
+We test our hypothesis: *Sentiment stability of financial 10-K report can be a potential trading signal*, on a diverse portfolio of 7 stocks as below:<br>
+<img src="./images/1. portfolio table.png" width="70%" height="50%"></img>  
 
 ## The SEC EDGAR Database
-In order to extract financial 10-K reports of the stocks in our universe, we leverage a pre-defined SEC API and the CIK number of the stock. Details on how to extract the 10-K report from SEC EDGAR database and pre-process it can be found in this notebook.  
+In order to extract financial 10-K reports of the stocks in our universe, we leverage a pre-defined SEC API and the CIK number of the stock. Details on how to extract the 10-K report from SEC EDGAR database and pre-process it can be found in [this notebook](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/blob/main/code/extracting-financial-10-k-reports-via-sec-edgar-db.ipynb).  
 
 ## Loughran McDonald Sentiment Word List
-
+Loughran McDonald word lists contains 6 different sentiments (negative, positive, uncertainty, litigious, strong modal, and weak modal) which are curated by examining word usage in at least 5% of 10-Ks (i.e., annual reports) during 1994-2008. It is a relatively exhaustive list of words that makes avoidance much more challenging. The sentiment lists are based on the most likely interpretation of a word in a business context. The Loughran and McDonald (LM) word lists are quite extensive: it contains 354 positive and 2,329 negative words. You can find the csv version used in this project [here](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/blob/main/code/LoughranMcDonald_MasterDictionary_2018.csv)
 
 ## Code
 
