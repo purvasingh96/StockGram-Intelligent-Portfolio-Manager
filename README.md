@@ -10,7 +10,7 @@ The project attempts to analyze if the sentiment stability of financial 10-K rep
 the company’s future mean returns. A diverse portfolio of stocks was selected to test this hypothesis. The
 proposed framework downloads 10-K reports of the companies from SEC’s EDGAR database. It passes
 them through the preprocessing pipeline to extract critical sections of the filings to perform NLP analysis.
-Using Loughran and McDonald sentiment word list, the framework generates sentiment TF-IDF from
+Using [Loughran and McDonald](https://github.com/purvasingh96/StockGram-Intelligent-Portfolio-Manager/blob/main/code/LoughranMcDonald_MasterDictionary_2018.csv) sentiment word list, the framework generates sentiment TF-IDF from
 the 10-K documents to calculate the cosine similarity between two consecutive 10-K reports and proposes
 to leverage this cosine similarity as the alpha factor. For analyzing the effectiveness of our alpha factor
 at predicting future returns, the framework uses the alphalens library to perform factor return analysis,
@@ -90,8 +90,9 @@ imply that our Alpha factor is only catching noise.
 The Sharpe Ratio or risk-adjusted return is a critical metric in evaluating alpha factors. It is the
 measure of excess portfolio return over the risk-free rate relative to its standard deviation.
 Sharpe ratio helps us to compare the relative performance of alpha factors. One important thing
-to note is that the Sharpe ratio is the key and not the magnitude of factor returns. Table 1 shows the Sharpe ratio of our alpha factors. Usually, a ratio under 1.0 is considered
-sub-optimal. Sharpe ratio greater than 1.0 is acceptable to good by investors. A Sharpe ratio
+to note is that the Sharpe ratio is the key and not the magnitude of factor returns. Table 1 shows the Sharpe ratio of our alpha factors. <br>
+
+Usually, a ratio under 1.0 is considered sub-optimal. Sharpe ratio greater than 1.0 is acceptable to good by investors. A Sharpe ratio
 higher than 2.0 is good, and investors deem a 3.0 or higher Sharpe ratio excellent.
 Looking at the Sharpe ratio of our Alpha factor, we can see that the 10-K filing reports that
 convey the sentiment interesting have the highest Sharpe ratio of 4.10, followed by the 10-K
@@ -99,6 +100,16 @@ documents that express a positive view with a Sharpe ratio of 1.02.<br><br>
 
 <img src="./images/sharpe_ratio.png" width="40%" height="60%"></img><br><br>
 
+## Contributor
+- [Purva Singh](https://purvasingh96.github.io)
+
+## Contributing
+
+Please feel free to open a Pull Request to contribute towards this repository. Also, if you think there's any section that requires more/better explanation, please use the issue tracker to let me know about the same.
+
+## Support 
+
+If you like this repo and find it useful, please consider (★) starring it (on top right of the page) so that it can reach a broader audience.
 
 
 
