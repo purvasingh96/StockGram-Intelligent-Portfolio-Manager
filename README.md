@@ -18,6 +18,12 @@ turnover analysis, and for comparing the Sharpe ratio of potential alpha factors
 there exists a strong correlation between the sentiment stability of our portfolio’s 10-K statements and its
 future mean returns.
 
+## System Architecture
+
+The below figure gives a high-level overview of how this intelligent portfolio mangager works. <br><br>
+
+<img src="./images/6. System architecture for IPM.png"></img>
+
 ## Quandl Dataset
 
 [Quandl end of day US Stock Prices database, Accessed: 2020-10](https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices)
